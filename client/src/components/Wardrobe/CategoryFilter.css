@@ -1,0 +1,45 @@
+.category-filter {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  background: var(--bg-tertiary);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--text-secondary);
+}
+
+.filter-btn:hover {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.filter-btn.active {
+  background: var(--accent-primary);
+  color: white;
+}

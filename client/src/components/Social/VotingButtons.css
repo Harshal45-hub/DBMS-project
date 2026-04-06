@@ -1,0 +1,33 @@
+.voting-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.vote-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.vote-btn.drip {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+  color: white;
+}
+
+.vote-btn.skip {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+}
+
+.vote-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.vote-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

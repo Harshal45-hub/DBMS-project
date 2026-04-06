@@ -1,0 +1,119 @@
+.wardrobe-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-text p {
+  color: var(--text-secondary);
+}
+
+.add-item-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--glow-purple);
+  transition: var(--transition-smooth);
+}
+
+.add-item-btn.active {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  box-shadow: none;
+  border: 1px solid var(--glass-border);
+}
+
+.filter-section {
+  padding: 1rem;
+}
+
+.add-item-form-container {
+  margin-bottom: 1rem;
+}
+
+.form-inner {
+  padding: 2rem;
+}
+
+.wardrobe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.loading-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skeleton-card {
+  height: 450px;
+  background: linear-gradient(90deg, var(--glass-bg) 25%, var(--glass-border) 50%, var(--glass-bg) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.empty-wardrobe {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: var(--text-tertiary);
+  opacity: 0.5;
+}
+
+.empty-wardrobe h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.empty-wardrobe p {
+  color: var(--text-secondary);
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .add-item-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

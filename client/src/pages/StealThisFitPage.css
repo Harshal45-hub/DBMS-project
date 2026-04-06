@@ -1,0 +1,23 @@
+.steal-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.steal-page h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  -webkit-background-clip-: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.steal-page p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.steal-container {
+  max-width: 800px;
+  margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+
+.gift-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.gift-page h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #ec489a, #f59e0b);
+  -webkit-background-clip-: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gift-page p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
